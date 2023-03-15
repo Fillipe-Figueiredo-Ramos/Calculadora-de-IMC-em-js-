@@ -1,0 +1,92 @@
+img {
+    width: 100%;
+    height: 100%;
+}
+
+#CalculadoraImc {
+    position: absolute;
+    width: 380px;
+    height: 619px;
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow: -41px -41px 82px #d9d9d9,
+        41px 41px 82px #ffffff;
+    right: 103px;
+    top: 197px;
+    z-index: 2;
+
+}
+
+
+#IMC-data {
+    position: relative;
+    left: 40px;
+    top: 60px;
+}
+
+.IMC-input {
+    width: 265px;
+    height: 26px;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    box-shadow: 20px 20px 60px #c5c5c5,
+        -20px -20px 60px #ffffff;
+    transition: 0.3s;
+}
+
+
+.IMC-input:focus {
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+        inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+}
+
+#IMC-button {
+    width: 18em;
+    height: 5em;
+    margin-top: 164px;
+    margin-left: 51px;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    cursor: pointer;
+}
+
+#IMC-button::before {
+    content: '';
+    width: 18rem;
+    height: 0rem;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+#IMC-button:hover::before {
+    width: 18em;
+    height: 5em;
+}
+
+.h3-ps {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.title {
+    font-size: 20px;
+}
+
